@@ -113,3 +113,32 @@ test('getCalculator returns a object whose property multiply takes a 2 integer a
 test('getCalculator returns a object whose property multiply when given non integer arguments return "multiply takes atmost 2 integer arguments" ', () => {
     expect(getCalculator().multiply(4, '5')).toBe('multiply takes atmost 2 integer arguments');
 });
+
+test('getCalculator returns a object whose property divide when given 0 integer arguments and returns NaN 0 / 0', () => {
+    expect(getCalculator().divide()).toBeNaN();
+});
+
+test('getCalculator returns a object whose property divide takes a 1 integer arguments and returns the integer / 0 which is Infinity', () => {
+    expect(getCalculator().divide(4)).toBe(Infinity);
+});
+
+test('getCalculator returns a object whose property divide takes a 2 integer arguments and returns their division or Infinity if divided by 0', () => {
+    expect(getCalculator().divide(4, 5)).toBe(4/5);
+});
+
+test('getCalculator returns a object whose property divide takes a 2 integer arguments and returns their division or Infinity if divided by 0', () => {
+    expect(getCalculator().divide(7, 5)).toBe(7/5);
+});
+
+test('getCalculator returns a object whose property divide takes a 2 integer arguments and returns their division or Infinity if divided by 0', () => {
+    expect(getCalculator().divide(4, 15)).toBe(4/15);
+});
+
+test('getCalculator returns a object whose property divide takes a 2 integer arguments and returns their division or Infinity if divided by 0', () => {
+    expect(getCalculator().divide(4, 0)).toBe(Infinity);
+});
+
+
+test('getCalculator returns a object whose property divide when given non integer arguments return "divide takes atmost 2 integer arguments" ', () => {
+    expect(getCalculator().divide(4, '5')).toBe('divide takes atmost 2 integer arguments');
+});
