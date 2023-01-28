@@ -34,12 +34,12 @@ test('getCalculator returns a object whose inherited property subtract return nu
     expect(getCalculator().subtract()).not.toBeNaN();
 });
 
-test('getCalculator returns a object whose inherited property divide return number', () => {
+test('getCalculator returns a object whose inherited property multiply return number', () => {
     expect(getCalculator().multiply()).not.toBeNaN();
 });
 
-test('getCalculator returns a object whose inherited property multiply return number', () => {
-    expect(getCalculator().divide()).not.toBeNaN();
+test('getCalculator returns a object whose inherited property divide return number', () => {
+    expect(getCalculator().divide()).toBeNaN();
 });
 
 test('getCalculator returns a object whose property add if given 0 arguments and returns 0', () => {
