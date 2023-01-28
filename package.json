@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/4C-75-63-6B-79/Testing_Practice/issues"
   },
-  "homepage": "https://github.com/4C-75-63-6B-79/Testing_Practice#readme"
+  "homepage": "https://github.com/4C-75-63-6B-79/Testing_Practice#readme",
+  "devDependencies": {
+    "eslint": "^8.32.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5"
+  }
 }
