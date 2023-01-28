@@ -66,7 +66,6 @@ test('getCalculator returns a object whose property add when given non integer a
     expect(getCalculator().add(4, '5')).toBe('add takes atmost 2 integer arguments');
 });
 
-
 test('getCalculator returns a object whose property subtract when given 0 integer arguments and returns 0', () => {
     expect(getCalculator().subtract()).toBe(0);
 });
@@ -89,4 +88,28 @@ test('getCalculator returns a object whose property subtract takes a 2 integer a
 
 test('getCalculator returns a object whose property subtract when given non integer arguments return "subtract takes atmost 2 integer arguments" ', () => {
     expect(getCalculator().subtract(4, '5')).toBe('subtract takes atmost 2 integer arguments');
+});
+
+test('getCalculator returns a object whose property multiply when given 0 integer arguments and returns 0', () => {
+    expect(getCalculator().multiply()).toBe(0);
+});
+
+test('getCalculator returns a object whose property multiply takes a 1 integer arguments and returns the integer * 0', () => {
+    expect(getCalculator().multiply(4)).toBe(0);
+});
+
+test('getCalculator returns a object whose property multiply takes a 2 integer arguments and returns their product integer', () => {
+    expect(getCalculator().multiply(4, 5)).toBe(4*5);
+});
+
+test('getCalculator returns a object whose property multiply takes a 2 integer arguments and returns their product integer', () => {
+    expect(getCalculator().multiply(7, 5)).toBe(7*5);
+});
+
+test('getCalculator returns a object whose property multiply takes a 2 integer arguments and returns their product integer', () => {
+    expect(getCalculator().multiply(4, 15)).toBe(4*15);
+});
+
+test('getCalculator returns a object whose property multiply when given non integer arguments return "multiply takes atmost 2 integer arguments" ', () => {
+    expect(getCalculator().multiply(4, '5')).toBe('multiply takes atmost 2 integer arguments');
 });
