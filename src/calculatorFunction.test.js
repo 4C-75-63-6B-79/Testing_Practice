@@ -38,7 +38,7 @@ test('getCalculator returns a object whose inherited property multiply return nu
     expect(getCalculator().multiply()).not.toBeNaN();
 });
 
-test('getCalculator returns a object whose inherited property divide return number', () => {
+test('getCalculator returns a object whose inherited property divide return NaN', () => {
     expect(getCalculator().divide()).toBeNaN();
 });
 
